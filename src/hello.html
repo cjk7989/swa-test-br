@@ -10,16 +10,7 @@
   <body>
     <main>
       <h1>Vanilla JavaScript App</h1>
-      <p>Loading content from the API: <b id="message"></b></b></p>
+      <p>Hello~</p>
     </main>
   </body>
-
-  <script>
-    (async function () {
-      let response = await fetch(`api/message`);
-      let message = await response.json();
-
-      document.querySelector("#message").innerHTML = message.text
-    })();
-  </script>
 </html>
